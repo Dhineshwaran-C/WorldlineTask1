@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/5</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 21 02:08:37 IST 2024</td>
+<td>Started on:</td><td>Thu Mar 21 11:36:22 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11214 ms)</td>
+<tr><td>Total time:</td><td>150 seconds (150322 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,113 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Task1.Task1.AppTest.personal_profile()'><b>personal_profile</b><br>Test class: Task1.Task1.AppTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=122.0.6261.131)
-Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
-System info: host: &apos;DESKTOP-16BLF8J&apos;, ip: &apos;10.10.10.148&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\DHINES~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63292}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ca7d093d23adc4aac0b04da04bafdd5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:287)
-	at Task1.Task1.AppTest.personal_profile(AppTest.java:60)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1636178473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1636178473'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=122.0.6261.131)
-Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
-System info: host: &apos;DESKTOP-16BLF8J&apos;, ip: &apos;10.10.10.148&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\DHINES~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63292}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ca7d093d23adc4aac0b04da04bafdd5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:287)
-	at Task1.Task1.AppTest.personal_profile(AppTest.java:60)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>5</td>
-<td>Task1.Task1.AppTest@8f4ea7c</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -182,6 +75,55 @@ Session ID: 4ca7d093d23adc4aac0b04da04bafdd5
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
+<tr>
+<td title='Task1.Task1.AppTest.personal_profile_change()'><b>personal_profile_change</b><br>Test class: Task1.Task1.AppTest<br>Parameters: line, 7-10 years, Automobile / Auto Anciliary / Auto Components, CEO<br/>
+<a href="#Output-2125903542" onClick='toggleBox("Output-2125903542", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2125903542" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2125903542">
+Personal Profile details Change Executed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Task1.Task1.AppTest@8f4ea7c</td></tr>
+<tr>
+<td title='Task1.Task1.AppTest.personal_profile_change()'><b>personal_profile_change</b><br>Test class: Task1.Task1.AppTest<br>Parameters: World, 4-7 years, Advertising / PR / MR / Event Management, Assistant Manager<br/>
+<a href="#Output-1882395698" onClick='toggleBox("Output-1882395698", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1882395698" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1882395698">
+Personal Profile details Change Executed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Task1.Task1.AppTest@8f4ea7c</td></tr>
+<tr>
+<td title='Task1.Task1.AppTest.personal_profile_change()'><b>personal_profile_change</b><br>Test class: Task1.Task1.AppTest<br>Parameters: training, 10-15 years, Banking / Financial Services / Broking, Engineer<br/>
+<a href="#Output-736868175" onClick='toggleBox("Output-736868175", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-736868175" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-736868175">
+Personal Profile details Change Executed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Task1.Task1.AppTest@8f4ea7c</td></tr>
+<tr>
+<td title='Task1.Task1.AppTest.carrier_profile_change()'><b>carrier_profile_change</b><br>Test class: Task1.Task1.AppTest<br>Parameters: Worldline, Mid Management, Advertising / PR / MR / Event Management, Assistance Manager, Business Intelligence and Visualization, Permanent, 5-10 LPA, Bangalore<br/>
+<a href="#Output-879706537" onClick='toggleBox("Output-879706537", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-879706537" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-879706537">
+Go to Carrier Profile Executed<br/>
+Professional details Change Executed<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>Task1.Task1.AppTest@8f4ea7c</td></tr>
 <tr>
 <td title='Task1.Task1.AppTest.open_browser()'><b>open_browser</b><br>Test class: Task1.Task1.AppTest<br/>
 <a href="#Output-1441328175" onClick='toggleBox("Output-1441328175", this, "Show output", "Hide output");'>Show output</a>
@@ -192,7 +134,87 @@ Start Browser Executed<br/>
 </div>
 </td>
 <td></td>
+<td>2</td>
+<td>Task1.Task1.AppTest@8f4ea7c</td></tr>
+<tr>
+<td title='Task1.Task1.AppTest.carrier_profile_change()'><b>carrier_profile_change</b><br>Test class: Task1.Task1.AppTest<br>Parameters: Worldlinetraining, Entry Level, BPO / Call Centre / ITES, Manager, Project Management, Contract, 3-5 LPA, Chennai<br/>
+<a href="#Output-2038185019" onClick='toggleBox("Output-2038185019", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2038185019" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2038185019">
+Go to Carrier Profile Executed<br/>
+Professional details Change Executed<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>Task1.Task1.AppTest@8f4ea7c</td></tr>
+<tr>
+<td title='Task1.Task1.AppTest.carrier_profile_change()'><b>carrier_profile_change</b><br>Test class: Task1.Task1.AppTest<br>Parameters: Training, Not Applicable - Fresher, Consulting, Consulting, Data Warehousing and ETL, Permanent, 25-40 LPA, Delhi<br/>
+<a href="#Output-293618119" onClick='toggleBox("Output-293618119", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-293618119" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-293618119">
+Go to Carrier Profile Executed<br/>
+Professional details Change Executed<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>Task1.Task1.AppTest@8f4ea7c</td></tr>
+<tr>
+<td title='Task1.Task1.AppTest.exploreBlog()'><b>exploreBlog</b><br>Test class: Task1.Task1.AppTest</td>
+<td></td>
+<td>9</td>
+<td>Task1.Task1.AppTest@8f4ea7c</td></tr>
+<tr>
+<td title='Task1.Task1.AppTest.personal_profile_change()'><b>personal_profile_change</b><br>Test class: Task1.Task1.AppTest<br>Parameters: Worldlinetraining, 2-4 years, BPO / Call Centre / ITES, Manager<br/>
+<a href="#Output-1544562778" onClick='toggleBox("Output-1544562778", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1544562778" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1544562778">
+Personal Profile details Change Executed<br/>
+</div>
+</td>
+<td></td>
 <td>4</td>
+<td>Task1.Task1.AppTest@8f4ea7c</td></tr>
+<tr>
+<td title='Task1.Task1.AppTest.carrier_profile_change()'><b>carrier_profile_change</b><br>Test class: Task1.Task1.AppTest<br>Parameters: Line, Top/Executive Management, Banking / Financial Services / Broking, Engineer, Blockchain, Contract, 15-25 LPA, Mumbai<br/>
+<a href="#Output-370055648" onClick='toggleBox("Output-370055648", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-370055648" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-370055648">
+Go to Carrier Profile Executed<br/>
+Professional details Change Executed<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>Task1.Task1.AppTest@8f4ea7c</td></tr>
+<tr>
+<td title='Task1.Task1.AppTest.logout()'><b>logout</b><br>Test class: Task1.Task1.AppTest<br/>
+<a href="#Output-1669104653" onClick='toggleBox("Output-1669104653", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1669104653" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1669104653">
+Log Out Executed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Task1.Task1.AppTest@8f4ea7c</td></tr>
+<tr>
+<td title='Task1.Task1.AppTest.personal_profile_change()'><b>personal_profile_change</b><br>Test class: Task1.Task1.AppTest<br>Parameters: Worldline, >15 years, Consulting, Manager<br/>
+<a href="#Output-1579139754" onClick='toggleBox("Output-1579139754", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1579139754" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1579139754">
+Personal Profile details Change Executed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
 <td>Task1.Task1.AppTest@8f4ea7c</td></tr>
 <tr>
 <td title='Task1.Task1.AppTest.login()'><b>login</b><br>Test class: Task1.Task1.AppTest<br/>
@@ -204,256 +226,37 @@ Login Executed<br/>
 </div>
 </td>
 <td></td>
-<td>0</td>
-<td>Task1.Task1.AppTest@8f4ea7c</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Task1.Task1.AppTest.personal_profile_change()'><b>personal_profile_change</b><br>Test class: Task1.Task1.AppTest</td>
-<td><div><pre>java.lang.Throwable: Method Task1.Task1.AppTest.personal_profile_change() on instance Task1.Task1.AppTest@8f4ea7c depends on not successfully finished methods 
-[Task1.Task1.AppTest.personal_profile() on instance Task1.Task1.AppTest@8f4ea7c]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1674403916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1674403916'><pre>java.lang.Throwable: Method Task1.Task1.AppTest.personal_profile_change() on instance Task1.Task1.AppTest@8f4ea7c depends on not successfully finished methods 
-[Task1.Task1.AppTest.personal_profile() on instance Task1.Task1.AppTest@8f4ea7c]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
+<td>1</td>
 <td>Task1.Task1.AppTest@8f4ea7c</td></tr>
 <tr>
-<td title='Task1.Task1.AppTest.exploreBlog()'><b>exploreBlog</b><br>Test class: Task1.Task1.AppTest</td>
-<td><div><pre>java.lang.Throwable: Method Task1.Task1.AppTest.exploreBlog() on instance Task1.Task1.AppTest@8f4ea7c depends on not successfully finished methods 
-[Task1.Task1.AppTest.goHome() on instance Task1.Task1.AppTest@8f4ea7c]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1878992188", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1878992188'><pre>java.lang.Throwable: Method Task1.Task1.AppTest.exploreBlog() on instance Task1.Task1.AppTest@8f4ea7c depends on not successfully finished methods 
-[Task1.Task1.AppTest.goHome() on instance Task1.Task1.AppTest@8f4ea7c]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>Task1.Task1.AppTest@8f4ea7c</td></tr>
-<tr>
-<td title='Task1.Task1.AppTest.logout()'><b>logout</b><br>Test class: Task1.Task1.AppTest</td>
-<td><div><pre>java.lang.Throwable: Method Task1.Task1.AppTest.logout() on instance Task1.Task1.AppTest@8f4ea7c depends on not successfully finished methods 
-[Task1.Task1.AppTest.exploreBlog() on instance Task1.Task1.AppTest@8f4ea7c]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1495161082", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1495161082'><pre>java.lang.Throwable: Method Task1.Task1.AppTest.logout() on instance Task1.Task1.AppTest@8f4ea7c depends on not successfully finished methods 
-[Task1.Task1.AppTest.exploreBlog() on instance Task1.Task1.AppTest@8f4ea7c]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>Task1.Task1.AppTest@8f4ea7c</td></tr>
-<tr>
-<td title='Task1.Task1.AppTest.carrier_profile_change()'><b>carrier_profile_change</b><br>Test class: Task1.Task1.AppTest</td>
-<td><div><pre>java.lang.Throwable: Method Task1.Task1.AppTest.carrier_profile_change() on instance Task1.Task1.AppTest@8f4ea7c depends on not successfully finished methods 
-[Task1.Task1.AppTest.personal_profile_change() on instance Task1.Task1.AppTest@8f4ea7c]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace61137731", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace61137731'><pre>java.lang.Throwable: Method Task1.Task1.AppTest.carrier_profile_change() on instance Task1.Task1.AppTest@8f4ea7c depends on not successfully finished methods 
-[Task1.Task1.AppTest.personal_profile_change() on instance Task1.Task1.AppTest@8f4ea7c]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
+<td title='Task1.Task1.AppTest.personal_profile()'><b>personal_profile</b><br>Test class: Task1.Task1.AppTest<br/>
+<a href="#Output-73688220" onClick='toggleBox("Output-73688220", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-73688220" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-73688220">
+Go to profile Executed<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
 <td>Task1.Task1.AppTest@8f4ea7c</td></tr>
 <tr>
 <td title='Task1.Task1.AppTest.goHome()'><b>goHome</b><br>Test class: Task1.Task1.AppTest</td>
-<td><div><pre>java.lang.Throwable: Method Task1.Task1.AppTest.goHome() on instance Task1.Task1.AppTest@8f4ea7c depends on not successfully finished methods 
-[Task1.Task1.AppTest.carrier_profile_change() on instance Task1.Task1.AppTest@8f4ea7c]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1658511941", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1658511941'><pre>java.lang.Throwable: Method Task1.Task1.AppTest.goHome() on instance Task1.Task1.AppTest@8f4ea7c depends on not successfully finished methods 
-[Task1.Task1.AppTest.carrier_profile_change() on instance Task1.Task1.AppTest@8f4ea7c]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
+<td></td>
+<td>4</td>
+<td>Task1.Task1.AppTest@8f4ea7c</td></tr>
+<tr>
+<td title='Task1.Task1.AppTest.carrier_profile_change()'><b>carrier_profile_change</b><br>Test class: Task1.Task1.AppTest<br>Parameters: World, Senior Management, Automobile / Auto Anciliary / Auto Components, CEO, Project Management, Both, 10-15 LPA, Pune<br/>
+<a href="#Output-487369776" onClick='toggleBox("Output-487369776", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-487369776" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-487369776">
+Go to Carrier Profile Executed<br/>
+Professional details Change Executed<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
 <td>Task1.Task1.AppTest@8f4ea7c</td></tr>
 </table><p>
 </body>

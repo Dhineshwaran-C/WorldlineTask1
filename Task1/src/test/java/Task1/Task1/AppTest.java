@@ -1,6 +1,6 @@
 package Task1.Task1;
 
-import java.util.NoSuchElementException;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -72,15 +72,17 @@ public class AppTest
     	
     	
     	if(i==0) {
-    		try {
-	    	WebElement deny_updates = driver.findElement(By.id("wzrk-cancel"));
-	    	wait.until(ExpectedConditions.visibilityOf(deny_updates));
-	    	deny_updates.click();
-	    	i=1;
-    		}
-    		catch(NoSuchElementException e) {
-    			// Notification element not found or not visible
-    		}
+    	    WebElement deny_updates = null;
+    	    try {
+    	        deny_updates = driver.findElement(By.id("wzrk-cancel"));
+    	    } catch (Exception e) {
+    	        //Notification Element not found, move on
+    	    }
+
+    	    if (deny_updates != null && deny_updates.isDisplayed()) {
+    	        deny_updates.click();
+    	        i = 1;
+    	    }
     	}
     	
     	String expectedURL = "https://learning.edureka.co/new-onboarding/userdetails?fromProfile=true&tab=userDetails";
@@ -120,8 +122,7 @@ public class AppTest
 
     
     @Test(dependsOnMethods = {"personal_profile_change"},dataProvider="testingdata2")
-    public void carrier_profile_change(String companyName, String currentJob, String currentIndustry, String userSkill, String interestedJob, String jobType, String lastDrawnSalary, String currentCity) throws InterruptedException {
-    	Thread.sleep(2000);		
+    public void carrier_profile_change(String companyName, String currentJob, String currentIndustry, String userSkill, String interestedJob, String jobType, String lastDrawnSalary, String currentCity) throws InterruptedException {	
     	WebElement career_services_click = driver.findElement(By.xpath("(//a[normalize-space()='Career Services'])[1]"));
     	career_services_click.click();
     	
@@ -177,15 +178,17 @@ public class AppTest
     	city.sendKeys(currentCity);
     	
     	if(i==0) {
-    		try {
-	    	WebElement deny_updates = driver.findElement(By.id("wzrk-cancel"));
-	    	wait.until(ExpectedConditions.visibilityOf(deny_updates));
-	    	deny_updates.click();
-	    	i=1;
-    		}
-    		catch(NoSuchElementException e) {
-    			// Notification element not found or not visible
-    		}
+    	    WebElement deny_updates = null;
+    	    try {
+    	        deny_updates = driver.findElement(By.id("wzrk-cancel"));
+    	    } catch (Exception e) {
+    	        //Notification Element not found, move on
+    	    }
+
+    	    if (deny_updates != null && deny_updates.isDisplayed()) {
+    	        deny_updates.click();
+    	        i = 1;
+    	    }
     	}
     	
     	WebElement next_button_2 = driver.findElement(By.xpath("(//button[normalize-space()='Next'])[1]"));
